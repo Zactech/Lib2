@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Lakeview ILS";
+}
+<div class="masthead text-black-50 text-capitalize text-center" style="background:url('/wwwroot/images/bg-masthead.jpg') no-repeat center center; background-size:cover;">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <h3 class="mb-5">@ViewData["Title"]</h3>
+            </div>
+        </div>
+    </div>    
+</div>
+
+
+<div class="card-group">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-img-top" id="catalog">
+                <h2 class="card-title homeLable">Library Catalog</h2>
+            </div>
+            <div class="card-text">
+                View and Manage Library Assets.
+            </div>
+            <div class="">
+                <a class="btn btn-primary" asp-controller="Catalog" asp-action="Index">
+                    View Catalog
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="card-img-top" id="patrons">
+                <h2 class="card-title homeLable">Patrons</h2>
+            </div>
+            <div class="card-text">
+                View and manage library patron data.
+            </div>
+            <div class="">
+                <a class="btn btn-primary" asp-controller="Patron" asp-action="Index">
+                    View Patron Index
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="card-img-top" id="branches">
+                <h2 class="card-title homeLable">Branches</h2>
+            </div>
+            <div class="card-text">
+                View and manage library patron data.
+            </div>
+            <div class="">
+                <a class="btn btn-primary" asp-controller="Branch" asp-action="Index">
+                    View Branch Index
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
